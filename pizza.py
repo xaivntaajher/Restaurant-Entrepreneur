@@ -1,4 +1,7 @@
-class Pizza:
-    def __init__(self) -> None:
-        self.dish_name = ''
-        self.price = 0
+from order import Order
+
+
+class Pizza(Order):
+    def __init__(self):
+        super().__init__('pizza', 20)
+  

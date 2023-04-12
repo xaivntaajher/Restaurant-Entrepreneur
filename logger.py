@@ -4,4 +4,4 @@ class Logger:
         self.daily_sales = 0
 
     def log_transaction(Order, number):
-        pass
+        Order = open('log.txt', 'a')

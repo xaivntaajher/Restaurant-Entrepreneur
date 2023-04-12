@@ -1,4 +1,5 @@
+
 class Order:
-    def __init__(self):
-        self.dish_name = ''
-        self.price = 0
+    def __init__(self, dish, price):
+        self.dish_name = dish
+        self.price = price
