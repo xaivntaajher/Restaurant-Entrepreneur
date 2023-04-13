@@ -1,4 +1,4 @@
-from logger import Logger
+from logger import logger
 from orderfactory import OrderFactory
 
 
@@ -7,7 +7,6 @@ class Franchise:
         self.location_number = number
         
     def place_order(self):
-        log = Logger()
         order = OrderFactory()
         print(f'Welcome to The Best Food You Ever Had, location #{self.location_number}')
         print('What would you like to order?')
@@ -16,13 +15,13 @@ class Franchise:
 
         while True:
             if user_input == str(1):
-                return log.log_transaction(order.create_order('pizza'), self.location_number)
+                return logger.log_transaction(order.create_order('pizza'), self.location_number)
                 
             elif user_input == str(2):
-                return log.log_transaction(order.create_order('pasta'), self.location_number)
+                return logger.log_transaction(order.create_order('pasta'), self.location_number)
                 
             elif user_input == str(3):
-                return log.log_transaction(order.create_order('salad'), self.location_number)
+                return logger.log_transaction(order.create_order('salad'), self.location_number)
                 
             else:
                 print('Invalid Input')
