@@ -15,13 +15,13 @@ class Franchise:
         print(user_input)
     
         if user_input == str(1):
-            log.log_transaction(order.create_order('pizza'))
+            log.log_transaction(order.create_order('pizza'), self.location_number)
             
         elif user_input == str(2):
-            log.log_transaction(order.create_order('pasta'))
+            log.log_transaction(order.create_order('pasta'), self.location_number)
             
         elif user_input == str(3):
-            log.log_transaction(order.create_order('salad'))
+            log.log_transaction(order.create_order('salad'), self.location_number)
             
         else:
             print('Invalid Input')

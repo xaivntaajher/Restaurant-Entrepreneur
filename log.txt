@@ -1,0 +1,6 @@
+TRX#1: pasta at 1 - $15.Total: $15 
+TRX#1: salad at 2 - $7.Total: $7 
+TRX#1: pizza at 1 - $20.Total: $20 
+TRX#1: pizza at 2 - $20.Total: $20 
+TRX#1: pasta at 3 - $15.Total: $15 
+TRX#1: pasta at 3 - $15.Total: $15 
