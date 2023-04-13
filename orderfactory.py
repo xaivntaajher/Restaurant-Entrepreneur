@@ -1,15 +1,12 @@
-from pizza import Pizza
-from pasta import Pasta
-from salad import Salad
-
+from order import Order
 
 class OrderFactory:
 
     def create_order(self, order):
         self.order = order
         if order == 'pizza':
-            return Pizza()
+            return Order('pizza', 20)
         elif order == 'pasta':
-            return Pasta()
+            return Order('pasta', 15)
         elif order == 'salad':
-            return Salad()
+            return Order('salad', 7)
