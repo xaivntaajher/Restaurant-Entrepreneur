@@ -6,9 +6,9 @@ class OrderFactory:
 
     def create_order(self, order):
         self.order = order
-        if order == 'pizza':
+        if order == 'Pizza':
             return Pizza()
-        elif order == 'pasta':
+        elif order == 'Pasta':
             return Pasta()
-        elif order == 'salad':
+        elif order == 'Salad':
             return Salad()
